@@ -43,6 +43,9 @@ class App extends Component {
           <Route path="/search/:query" render={ ({match}) => 
             <Images query={match.params.query}></Images>
           } />
+          <Route exact path="/" render={ ({match}) => 
+            <Images query={"Hiking"}></Images>
+          } />
         </div>
       </BrowserRouter>
     );
